@@ -1,4 +1,4 @@
-const models = require('../models')
+import models from '../models'
 
 const getAllNovels = async (request, response) => {
   const novels = await models.Novels.findAll({
